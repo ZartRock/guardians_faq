@@ -16,7 +16,7 @@ O guardian pode atualizar:
  * sua senha
  * seu nome
  * seu email
- * seu status
+O administrador pode atualizar o status do guardian
 
 ## 04. Pesqisar guardian
 Pode-se pesquisar um guardian através:
