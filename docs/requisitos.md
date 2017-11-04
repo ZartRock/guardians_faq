@@ -6,7 +6,6 @@ O administrados pode cadastrar um guardian no sistema através:
  * da senha
  * do nome
  * do email
- * do celular
 
 ## 02. Remover guardian
 O administrador pode remover um guardian do sistema.
@@ -16,7 +15,6 @@ O guardian pode atualizar:
  * sua senha
  * seu nome
  * seu email
- * seu celular
 
 ## 04. Pesqisar guardian
 Pode-se pesquisar um guardian através:
