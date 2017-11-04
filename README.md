@@ -1,3 +1,4 @@
 # Guardians FAQ
 
-Repositório para armazenar soluções de problemas técnicos já resolvidos pelos Guardians.
+Sistema de suporte aos Guardias. Permite que o guardan faça perguntas aos demais
+e armazene soluções para problemas técnicos, para possível consulta fultura.
