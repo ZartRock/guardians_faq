@@ -16,9 +16,10 @@ O guardian pode atualizar:
  * sua senha
  * seu nome
  * seu email
-O administrador pode atualizar o status do guardian
 
-## 04. Pesqisar guardian
+Somente administrador pode atualizar o status do guardian
+
+## 04. Pesquisar guardian
 Pode-se pesquisar um guardian através:
  * do nome
  * do login
@@ -65,25 +66,31 @@ O guardian pode criar uma pergunta informando:
 ## 12. Atualizar Pergunta
 O guardian pode atualizar sua pergunta.
 
-## 13. Responder Pergunta
+## 13. Remover Pergunta
+O guardian pode remover sua pergunta.
+
+## 14. Responder Pergunta
 Um guardian pode responder uma pegunta informando:
  * o login do guardian
  * a data
  * a resposta
 
-## 14. Atualizar Resposta
+## 15. Atualizar Resposta
 O guardian pode atualizar sua respota a uma pergunta.
 
-## 15. Criar FAQ a partir de uma Pergunta
+## 16. Remover Resposta
+O guardian pode remover sua resposta
+
+## 17. Criar FAQ a partir de uma Pergunta
 O guardian que fez a pergunta pode criar uma FAQ a partir da pergunta.
 
-## 16. Fechar Pergunta
+## 18. Fechar Pergunta
 Ao ter sua pergunta respondida o guardian a fez pode fecha-la.
 
-## 17. Curtir FAQ
+## 19. Curtir FAQ
 O guardian pode curtir uma FAQ se ela tiver ajudado a solucionar seu problema.
 As mais cutidas aparecerão primeiro na lista do resultado da pesquisa.
 
-## 18. Número de FAQs e curtidas
+## 20. Número de FAQs e curtidas
 Cada guardian terá no seu perfil o número de FAQs criadas e o somatório das
 cutidas de todas as FAQs criadas.
