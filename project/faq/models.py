@@ -31,12 +31,12 @@ class FAQ(models.Model):
         self.save()
 
     def __str__(self):
-        return str(self.id) + " - " + str(self.problema)
+        return self.id_guardina.login + " - " + str(self.id) + " - " + str(self.problema)
 
 class Solucao(models.Model):
     id_guardian = models.ForeignKey(Guardian, on_delete=models.CASCADE)
     id_faq = models.ForeignKey(FAQ, on_delete=models.CASCADE)
-    data = models.DateTimeField(blank=True, null=True)
+    data = models.DateField(blank=True, null=True)
     solucao = models.TextField()
     fontes = models.TextField(blank=True, null=True)
 
@@ -45,4 +45,17 @@ class Solucao(models.Model):
         self.save()
 
     def __str__(self):
-        return str(self.id) + " - " + str(self.id_faq.id)
+        return self.id_guardian.login + " - " + str(self.id) + " - " + str(self.id_faq.id)
+
+class Pergunta(models.Model):
+    id_guardian = models.ForeignKey(Guardian, on_delete=models.CASCADE)
+    data = models.DateTimeField(blank=True, null=True)
+    pergunta = models.CharField(max_length=255)
+    descricao = models.TextField()
+
+    def set_data(self):
+        self.data = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.id_guardian.login + " - " + str(self.id) + " - " + self.pergunta   
