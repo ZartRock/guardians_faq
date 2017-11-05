@@ -1,3 +1,5 @@
+# coding: utf-8
+
 from django.db import models
 from django.utils import timezone
 
@@ -29,4 +31,18 @@ class FAQ(models.Model):
         self.save()
 
     def __str__(self):
-        return self.problema
+        return str(self.id) + " - " + str(self.problema)
+
+class Solucao(models.Model):
+    id_guardian = models.ForeignKey(Guardian, on_delete=models.CASCADE)
+    id_faq = models.ForeignKey(FAQ, on_delete=models.CASCADE)
+    data = models.DateTimeField(blank=True, null=True)
+    solucao = models.TextField()
+    fontes = models.TextField(blank=True, null=True)
+
+    def set_data(self):
+        self.data = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return str(self.id) + " - " + str(self.id_faq.id)
