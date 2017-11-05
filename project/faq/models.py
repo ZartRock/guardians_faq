@@ -58,4 +58,17 @@ class Pergunta(models.Model):
         self.save()
 
     def __str__(self):
-        return self.id_guardian.login + " - " + str(self.id) + " - " + self.pergunta   
+        return self.id_guardian.login + " - " + str(self.id) + " - " + self.pergunta
+
+class Resposta(models.Model):
+    id_guardian = models.ForeignKey(Guardian, on_delete=models.CASCADE)
+    id_pergunta = models.ForeignKey(Pergunta, on_delete=models.CASCADE)
+    date = models.DateTimeField(blank=True, null=True)
+    resposta = models.TextField()
+
+    def set_data(self):
+        self.data = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.id_guardian.login + " - " + str(self.id) + " - " + str(self.id_pergunta.id)
