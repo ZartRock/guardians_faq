@@ -2,11 +2,11 @@
 
 ## Tutorial para instação das depedências
 
-## Pacotes
+### Pacotes
  * django==1.9
  * django-bootstrap3
 
-
+### Tutorial Simples
 Antes de tudo, faça a instalação do gerenciador "pip". Depois, execute:
 
 * pip install django==1.9
